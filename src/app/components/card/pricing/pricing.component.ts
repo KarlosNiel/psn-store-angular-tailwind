@@ -12,4 +12,6 @@ export class PricingComponent {
 	gameType:string ="Digital PS4"
 	@Input()
 	gamePrice:string = "R$ 399,90"
+  @Input()
+  gameTitle:string = "Play it Now!"
 }

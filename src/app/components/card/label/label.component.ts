@@ -10,6 +10,6 @@ import { MatCardModule } from '@angular/material/card';
 export class LabelComponent {
 
   @Input()
-	gameLabel:string=""
+	gameLabel:string="Exclusive"
 
 }

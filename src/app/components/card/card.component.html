@@ -1,7 +1,14 @@
-<mat-card class="bg-[url('assets/ac-cover.jpg')] bg-contain object-center justify-end  w-80 h-120 xl:w-102 xl:h-165 ">
+<mat-card class="bg-contain object-center justify-end  w-80 h-120 xl:w-102 xl:h-165 "
+  [ngStyle]="{ 'background-image': 'url(' + gameCover + ')'}">
   <div class="flex justify-end pb-2">
-    <app-label></app-label>
+    <app-label
+      [gameLabel]="gameLabel">
+    </app-label>
   </div>
 
-  <app-pricing></app-pricing>
+  <app-pricing
+    [gamePrice]="gamePrice"
+    [gameType]="gameType">
+  </app-pricing>
 </mat-card>
+
